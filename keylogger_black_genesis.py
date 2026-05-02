@@ -92,15 +92,19 @@ def sendFiles():
 
 #baixar Arquivos, coisas, virus de computador para PC do alvo, abrir um listener e infectar o computador pessoal do alvo
 #na hora em que o alvo liga seu PC e inicializa o sistema operacional, o listener estará online e pronto para a operação Explorar do Dia Zero
-    with FileWrite(on_listener=sendFiles) as fw:
-        fw.send(files)
+    with FileWrite(on_listener=SENDFILES) as FW:
+        FW.sendfiles(SENDFILES)
+        GET.FDQN_GET.POST = "8.8.8.8"
+
 
 #para capturar a area de transferencia do alvo e para fazer extração de dados do alvo/hackear (interceptar o alvo) é assim mesmo, vai ser assim
 #para hackear (interceptar os dados do alvo) faz assim
-    with HackIntercept(on_target=captureData) as hi:
-        hi.capture(data)
+    with HackIntercept(on_target=CAPTUREDATA) as HI:
+        HI.capturedata(CAPTUREDATA)
+        POST.SEND_GET_DATA_FROM = "WINDOWS11 / * MSG_AS = MESSAGE: YOU ARE PWN3D, HACKED BY CODK TEAM (BRAZIL HACKER TEAM), RESPECT THE HACKERS."
 
 #captura os dados do sistema operacional alvo e gera uma tarefa de exfiltração de dados
 #para capturar os dados do sistema operacional alvo, gerar uma tarefa de exfiltração de dados e infectar o sistema operacional alvo é assim
-    with dataCapture(on_target_operating_system=DataCapture) as dc:
-        dc.dataCapture(on_target=dataCapture+exfiltrateData)
+    with dataCapture(on_target_operating_system=DATACAPTURE) as DC:
+        DC.dataCapture(on_target=DATACAPTURE+EXFILTRATEDATA)
+        SEND.POST_MALICIOUS_DATA_TO_TARGET_OPERATING_SYSTEM = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
