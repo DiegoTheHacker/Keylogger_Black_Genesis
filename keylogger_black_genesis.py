@@ -88,5 +88,19 @@ def sendFiles():
         DC.dataCapture(on_target=DATACAPTURE+EXFILTRATEDATA)
         SEND.POST_MALICIOUS_DATA_TO_TARGET_OPERATING_SYSTEM = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
 
-    with killTargetOS(on_target_os_cmd=KILLSYSTEM) as KTOS: #KILLTARGETOS
-        KTC.killSystem("on_target_operating_system=COPY_DATA (Timeout=10) COPY_DATA=5000 MB+KILLSYSTEM") #Wait in seconds and then kill the system completely after copying all the necessary data needed when finished transfering in the data to the main system.
+    with killTargetOS(on_target_os_cmd=KILLSYSTEM) as KTOS:
+        KTC.killSystem("on_target_operating_system=COPY_DATA (Timeout=10) COPY_DATA=5000 MB+KILLSYSTEM")
+
+def encryptFiles():
+
+    with encryption as wb:
+        ENCRYPTALGORITHM.EncryptFiles(target_operating_system=ENCRYPTFILES)
+        EF.encryptfiles(on_target_operating_system=ENCRYPTFILES+ENCRYPTDATA)
+        GET.ENCRYPTDATA_FROM_DECRYPTED_DATA = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
+
+def decryptFiles():
+    
+    with decryption as wb:
+        DECRYPTALGORITHM.DecryptFiles(target_operating_system=DECRYPTFILES)
+        DF.decryptfiles(on_target_operating_system=DECRYPTFILES+DECRYPTDATA)
+        GET.DECRYPTDATA_FROM_DECRYPTED_DATA = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
